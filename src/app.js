@@ -1,3 +1,10 @@
+/* eslint-disable */
+import "bootstrap";
+import "./style.css";
+
+import "./assets/img/rigo-baby.jpg";
+import "./assets/img/4geeks.ico";
+
 window.onload = function() {
   // Definición de las listas de excusas
   let who = ["The dog", "My grandma", "The mailman", "My bird"];
