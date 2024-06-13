@@ -3,3 +3,62 @@
 .container {
   text-align: center;
 }
+
+body {
+  background: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  display: inline-block;
+  text-align: center;
+  width: 400px;
+  height: 600px;
+  padding: 20px;
+  padding-top: 200px;
+  font-size: 100px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background: white;
+  position: relative;
+  &::before {
+    content: "\2660";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 80px;
+  }
+
+  &::after {
+    content: "\2660";
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 80px;
+  }
+
+  &.spade:before,
+  &.spade:after {
+    content: "\2660";
+    color: black;
+  }
+  &.club:before,
+  &.club:after {
+    content: "\2663";
+    color: black;
+  }
+  &.diamond:before,
+  &.diamond:after {
+    content: "\2666";
+    color: red;
+  }
+  &.hearts:before,
+  &.hearts:after {
+    content: "\2665";
+    color: red;
+  }
+}
